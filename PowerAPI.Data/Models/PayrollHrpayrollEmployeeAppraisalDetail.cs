@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace PowerAPI.Data.Models
+{
+    public partial class PayrollHrpayrollEmployeeAppraisalDetail
+    {
+        public string CompanyId { get; set; }
+        public string DivisionId { get; set; }
+        public string DepartmentId { get; set; }
+        public string PeriodId { get; set; }
+        public string AppraisalId { get; set; }
+        public decimal AppraisalDetailInc { get; set; }
+        public string AppraisalType { get; set; }
+        public string AppraisalGoal { get; set; }
+        public string AppraisalKeyResultId { get; set; }
+        public string AppraisalKeyResultIndicator { get; set; }
+        public double? MaxScore { get; set; }
+        public double? AppraiseeScore { get; set; }
+        public double? AppraisalScore { get; set; }
+        public string Remarks { get; set; }
+        public string LockedBy { get; set; }
+        public DateTime? LockTs { get; set; }
+        public double? AppraiseePercent { get; set; }
+        public string ScoreCriteriaId { get; set; }
+        public double? ReviewedAppraisalScore { get; set; }
+        public string ManagerRemark { get; set; }
+        public string Hrremark { get; set; }
+        public DateTime? ManagerCaptureDate { get; set; }
+        public DateTime? EmployeeCaptureDate { get; set; }
+        public DateTime? HrcaptureDate { get; set; }
+    }
+}

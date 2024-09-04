@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>647c7204-ddfb-4426-853a-2454e033c73c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Document.Processor" Version="23.2.3" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="23.2.3" />
+    <!--<PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.4" />-->
+    <!--<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />-->
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.5.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="8.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <!--<PackageReference Include="ReSharper.Annotations" Version="7.1.3" />-->
+	  <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerAPI.Data\PowerAPI.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Clients\Reports.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Reports\OrderReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Reports\RmaReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <None Update="appsettings.json.bak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>-->
+
+</Project>

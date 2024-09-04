@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace PowerAPI.Data.Models
+{
+    public partial class InsuranceReInsuranceNoteComponentsTransaction
+    {
+        public string CompanyId { get; set; }
+        public string DivisionId { get; set; }
+        public string DepartmentId { get; set; }
+        public string InvoiceNumber { get; set; }
+        public string NoteComponentId { get; set; }
+        public decimal? DebitAmount { get; set; }
+        public decimal? CreditAmount { get; set; }
+        public string EnteredBy { get; set; }
+        public DateTime? EnteredDate { get; set; }
+        public string LockedBy { get; set; }
+        public DateTime? LockTs { get; set; }
+    }
+}
